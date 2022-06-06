@@ -1,6 +1,9 @@
 ---
 layout: layouts/base.njk
 ---
-
-<time>{{ date | readableDate }}</time>
+<div class="sm:p-24">
+<p class="text-4xl sm:text-6xl leading-nomral mt-o mb-2 -ml-1">{{ title | safe }}</p>
+<div class="mt-4 text-lg">
 <article>{{ content | safe }}</article>
+</div>
+</div>

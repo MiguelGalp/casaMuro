@@ -3,13 +3,16 @@
   <head>
     <title>{{ title }}</title>
      <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    {% include "../components/navigation.njk" %}
-    <main class="p-12">
-      <h1 class="text-3xl mb-8">{{title}}</h1>
+  <body class="bg-[#FEFC54]">
+  {% include "../components/navigation.njk" %}
+    <main class="p-4">
       {{ content | safe }}
     </main>
     <script src="/assets/main.js"></script>
+  {% include "../components/footer.njk" %}
   </body>
 </html>

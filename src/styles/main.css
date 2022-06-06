@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-rotate {
+    transform: rotate(-4.37deg);
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+}
+
+.icono {
+    transform: rotate(22deg) translate(-650%, -50%) scale(1.9) !important;
+}
+
+.icono-translate {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
